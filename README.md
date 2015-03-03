@@ -1,4 +1,4 @@
-# luhn-kata
+# Luhn Kata
 A Function Programming Kata
 
 In this kata, we will explore writing an algorithm in a functional programming style. You do not need to use a functional language (but you are welcome to). Instead, we will impose some restrictions on the code you write:
