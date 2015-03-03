@@ -37,3 +37,4 @@ member this.evenDigitValue digit =
 ```
 
 Summing digits will vary widely based on the language you're using. Since this is non-trivial code, let's back out the changes that got us to the broken state, and write some tests for the `sumDigits` function. [Let's do it!](step-4.md)
+
