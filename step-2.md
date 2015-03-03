@@ -28,3 +28,5 @@ We also could have aliased the identity function for this:
 ```fsharp
 member this.oddDigitValue = id
 ```
+
+Let's move onto [even digit value](step-3.md).
