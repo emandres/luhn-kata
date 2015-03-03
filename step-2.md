@@ -25,4 +25,6 @@ type LuhnChecker() =
 
 We also could have aliased the identity function for this:
 
-    member this.oddDigitValue = id
+```fsharp
+member this.oddDigitValue = id
+```
