@@ -10,4 +10,4 @@ In this kata, we will explore writing an algorithm in a functional programming s
 
 With these restrictions in mind, you will want to have a library available to make functional-style programming easier. In C#, you will likely rely heavily on LINQ. In JavaScript, you may want to use [underscore.js](http://underscorejs.org).
 
-Let's [get started](#)!
+Let's [get started](step-1.md)!
