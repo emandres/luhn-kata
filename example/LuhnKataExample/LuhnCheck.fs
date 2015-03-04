@@ -9,8 +9,7 @@ module LuhnCheck =
         2 * digit
 
     let digits number =
-       number.ToString() |>
-       Seq.map (fun c -> Int32.Parse((string)c))
+       Seq.unfold (fun v -> if v > 0 then Some(v % 10, v / 10) else None) number
 
     let sumDigits number =
        digits number |>
