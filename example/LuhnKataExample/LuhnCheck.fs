@@ -26,3 +26,6 @@ module LuhnCheck =
         digits accountNumber |>
         Seq.mapi digitValue |>
         Seq.sum
+
+    let checkDigit accountNumber =
+        raise <| new NotImplementedException()

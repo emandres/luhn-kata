@@ -1,5 +1,6 @@
 ﻿namespace LuhnKataExample
 
+open System
 open NUnit.Framework
 open LuhnCheck
 
@@ -26,3 +27,9 @@ type LuhnTests() =
     [<TestCase(10, 1)>]
     member this.when_getting_the_value_for_the_account_number(number, expectedValue) =
         Assert.That(accountNumberValue number, Is.EqualTo(expectedValue))
+
+    [<TestCase(1, 8)>]
+    [<TestCase(10, 9)>]
+    [<TestCase(411111111111111L, 1)>]
+    member this.when_getting_the_check_digit(number, expected) =
+        Assert.That(checkDigit number, Is.EqualTo(expected))
