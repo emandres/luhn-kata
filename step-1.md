@@ -20,7 +20,7 @@ Index|Digit|Value|Digit Sum
 |||Check Digit|4
 
 * Even index digits are doubled. If the result is greater than ten, add its digits together.
-* Odd index digits are stay the same.
+* Odd index digits stay the same.
 * Add all of the values together, mod 10.
 * Subtract from 10, mod 10.
 * Indexing begins with the **last** digit, zero based (i.e. the last digit is even).
