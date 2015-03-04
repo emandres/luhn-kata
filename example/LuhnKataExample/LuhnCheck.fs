@@ -15,3 +15,6 @@ module LuhnCheck =
 
     let evenDigitValue digit =
         2 * digit |> sumDigits
+
+    let accountNumberValue accountNumber =
+        raise <| new NotImplementedException()

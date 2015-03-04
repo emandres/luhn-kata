@@ -21,3 +21,7 @@ type LuhnTests() =
     [<TestCase(11, 2)>]
     member this.when_summing_two_digits(number, digitSum) =
         Assert.That(sumDigits number, Is.EqualTo(digitSum))
+
+    [<TestCase(1, 2)>]
+    member this.when_getting_the_value_for_the_account_number(number, expectedValue) =
+        Assert.That(accountNumberValue number, Is.EqualTo(expectedValue))
