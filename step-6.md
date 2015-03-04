@@ -28,7 +28,7 @@ let accountNumberValue number =
   Seq.sum
 ```
 
-That `Seq.mapi` is pretty ugly. Let's refactor that
+That `Seq.mapi` line is pretty ugly. Let's refactor that
 ```fsharp
 let digitValue index element =
   if index % 2 = 0 then
