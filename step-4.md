@@ -2,7 +2,7 @@
 
 ```fsharp
 [<TestCase(10, 1)>]
-let when_summing_two_digits(number, digitSum) =
+member this.when_summing_two_digits(number, digitSum) =
   Assert.That(sumDigits number, Is.EqualTo(digitSum))
 ```
 
@@ -31,8 +31,7 @@ That's more like it. There might be other ways to do it.
 ```fsharp
 let digits number =
   //Continually mod 10 until we don't have anymore digits
-  Seq.unfold (fun v -> if v > 0 then Some(v % 10, v / 10) else None) number |>
-  Seq.choose id
+  Seq.unfold (fun v -> if v > 0 then Some(v % 10, v / 10) else None) number
 
 let sumDigits number =
   this.digits number |> Seq.sum
