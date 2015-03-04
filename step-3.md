@@ -14,7 +14,7 @@ let when_calculating_the_value_for_an_even_digit(digit, expected) =
   Asset.That(evenDigitValue digit, Is.EqualTo(expected))
 ```
 
-Go ahead an implement make that test pass.
+Go ahead and implement make that test pass.
 
 ```fsharp
 let evenDigitValue digit =
