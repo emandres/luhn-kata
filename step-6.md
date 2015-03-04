@@ -25,6 +25,6 @@ And let's fix that test.
 
 ```fsharp
 member this.accountNumberValue number =
-  Seq.map (fun index element -> if index % 2 = 0 then evenDigitValue element else oddDigitValue element) |>
+  Seq.mapi (fun index element -> if index % 2 = 0 then evenDigitValue element else oddDigitValue element) |>
   Seq.sum
 ```
