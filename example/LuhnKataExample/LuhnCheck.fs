@@ -6,4 +6,4 @@ module LuhnCheck =
     let oddDigitValue = id
 
     let evenDigitValue digit =
-        2 * digit
+        2 * digit |> digitSum
