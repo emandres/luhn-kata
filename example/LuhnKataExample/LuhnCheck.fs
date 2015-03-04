@@ -7,3 +7,6 @@ module LuhnCheck =
 
     let evenDigitValue digit =
         2 * digit
+
+    let sumDigits number =
+        raise <| new NotImplementedException()
