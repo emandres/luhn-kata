@@ -6,6 +6,7 @@ Let's get warmed up by test driving the odd digit value calculation.
 ```fsharp
 [<TestFixture>]
 type LuhnTests() =
+
   [<TestCase(0,0)>]
   [<TestCase(5,5)>]
   [<TestCase(9,9)>]
