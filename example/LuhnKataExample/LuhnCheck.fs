@@ -9,4 +9,4 @@ module LuhnCheck =
         2 * digit
 
     let sumDigits number =
-        1
+       1

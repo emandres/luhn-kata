@@ -17,5 +17,6 @@ type LuhnTests() =
         Assert.That(evenDigitValue digit, Is.EqualTo(expected))
 
     [<TestCase(10, 1)>]
+    [<TestCase(11, 2)>]
     member this.when_summing_two_digits(number, digitSum) =
         Assert.That(sumDigits number, Is.EqualTo(digitSum))
