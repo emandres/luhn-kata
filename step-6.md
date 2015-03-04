@@ -26,3 +26,5 @@ let accountNumberValue number =
   Seq.mapi (fun index element -> if index % 2 = 0 then evenDigitValue element else oddDigitValue element) |>
   Seq.sum
 ```
+
+[Let's move on to the next step and wrap this up!](step-7.md)
