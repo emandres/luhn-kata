@@ -5,4 +5,5 @@ open System
 module LuhnCheck =
     let oddDigitValue = id
 
-    let evenDigitValue digit = raise <| new NotImplementedException()
+    let evenDigitValue digit =
+        2 * digit
