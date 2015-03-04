@@ -4,7 +4,7 @@ Let's call the account number's value the sum of the value of all digits in the 
 
 ```fsharp
 [<TestCase(1, 2)>]
-let when_getting_the_value_for_the_account_number(number, expectedValue) =
+member this.when_getting_the_value_for_the_account_number(number, expectedValue) =
   Assert.That(accountNumberValue number, Is.EqualTo(expectedValue))
 ```
 
