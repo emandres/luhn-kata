@@ -4,17 +4,17 @@ open System
 
 module LuhnCheck =
 
-    let digits number =
-       Seq.unfold (fun v -> if v > 0 then Some(v % 10, v / 10) else None) number
+    let digits (number:Int64) =
+       Seq.unfold (fun (v:Int64) -> if v > 0L then Some(v % 10L, v / 10L) else None) number
 
-    let sumDigits number =
+    let sumDigits (number:Int64) =
        digits number |>
        Seq.sum
 
     let oddDigitValue = id
 
     let evenDigitValue digit =
-        2 * digit |> sumDigits
+        2L * digit |> sumDigits
 
     let digitValue index element =
         if index % 2 = 0 then
@@ -28,4 +28,4 @@ module LuhnCheck =
         Seq.sum
 
     let checkDigit accountNumber =
-        raise <| new NotImplementedException()
+        10L - (accountNumberValue accountNumber) % 10L
