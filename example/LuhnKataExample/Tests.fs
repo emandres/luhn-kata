@@ -11,3 +11,7 @@ type LuhnTests() =
     [<TestCase(9,9)>]
     member this.when_calculating_the_value_for_an_odd_digit(digit:int, expected:int) =
         Assert.That(oddDigitValue digit, Is.EqualTo(expected))
+
+    [<TestCase(1, 2)>]
+    member this.when_calculating_the_value_for_an_even_digit(digit, expected) =
+        Assert.That(evenDigitValue digit, Is.EqualTo(expected))
