@@ -1,4 +1,7 @@
 ﻿namespace LuhnKataExample
 
+open System
+
 module LuhnCheck =
-    let foo = "bar"
+    let oddDigitValue digit =
+        raise <| new NotImplementedException()
