@@ -1,5 +1,4 @@
-Odd Digit Value
-===============
+# Odd Digit Value
 
 Let's get warmed up by test driving the odd digit value calculation. 
 

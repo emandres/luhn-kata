@@ -1,5 +1,4 @@
-Sum Digits
-==========
+# Sum Digits
 
 ```fsharp
 [<TestCase(10, 1)>]

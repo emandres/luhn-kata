@@ -1,5 +1,4 @@
-Even Digit Value
-================
+# Even Digit Value
 
 Now let's work do the even digit value. As mentioned previously, even digits have a bit more of an algorithm to them.
 

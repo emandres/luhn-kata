@@ -1,5 +1,4 @@
-Background
-==========
+# Background
 
 Credit card numbers are composed of two parts: an account number, and a check digit. The check digit is the last digit of the credit card number, and exists to ensure that a number isn't mistyped when manually entered. It is computed using a simple checksum algorithm known as a Luhn check. 
 

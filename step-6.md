@@ -1,5 +1,5 @@
-Account Number Value
-====================
+# Account Number Value
+
 Let's call the account number's value the sum of the value of all digits in the account number.
 
 ```fsharp
