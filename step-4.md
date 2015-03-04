@@ -2,7 +2,7 @@
 
 ```fsharp
 [<TestCase(10, 1)>]
-let when_summing_two_digits(number, digitSum) =
+member this.when_summing_two_digits(number, digitSum) =
   Assert.That(sumDigits number, Is.EqualTo(digitSum))
 ```
 
