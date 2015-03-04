@@ -1,6 +1,7 @@
 # Account Number Value
 
 Let's call the account number's value the sum of the value of all digits in the account number.
+
 [6.0](../../compare/step-5-1...step-6-0)
 ```fsharp
 [<TestCase(1, 2)>]
