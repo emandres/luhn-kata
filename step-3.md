@@ -9,7 +9,7 @@ Let's write a test
 
 ```fsharp
 [<TestCase(1, 2)>]
-let when_calculating_the_value_for_an_even_digit(digit, expected) =
+member this.when_calculating_the_value_for_an_even_digit(digit, expected) =
   Assert.That(evenDigitValue digit, Is.EqualTo(expected))
 ```
 
