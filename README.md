@@ -8,6 +8,6 @@ In this kata, we will explore writing an algorithm in a functional programming s
 3. Functions may contain only **one** statement.
 4. No classes &mdash; we're writing FP, not OO. If your language requires a class to compile, you are to treat it as a bag of functions.
 
-With these restrictions in mind, you will want to have a library available to make functional-style programming easier. In C#, you will likely rely heavily on LINQ. In JavaScript, you may want to use [underscore.js](http://underscorejs.org).
+With these restrictions in mind, you will want to have a library available to make functional-style programming easier. In C#, you will likely rely on LINQ. In JavaScript, you may want to use [underscore.js](http://underscorejs.org). Other languages might have the necessary functions in the standard library (F#, ruby).
 
 Let's [get started](step-1.md)!
