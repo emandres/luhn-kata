@@ -10,9 +10,7 @@ type LuhnTests() =
   [<TestCase(5,5)>]
   [<TestCase(9,9)>]
   member this.when_calculating_the_value_for_an_odd_digit(digit, expected) =
-    let checker = new LuhnChecker()
-
-    Assert.That(checker.oddDigitValue digit, Is.EqualTo(expected))
+    Assert.That(oddDigitValue digit, Is.EqualTo(expected))
 ```
 
 If you haven't realized, odd digits are really easy. Let's implement it.
