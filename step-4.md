@@ -39,4 +39,4 @@ let sumDigits number =
   this.digits number |> Seq.sum
 ```
 
-Now let's get back to [even digit value](step-5.md)
+Now let's get back to [even digit value](step-5.md).
