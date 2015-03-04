@@ -7,7 +7,7 @@ Now let's work do the even digit value. As mentioned previously, even digits hav
 
 Let's write a test
 
-###### [3.0](../../tree/step-3-0/example/LuhnCheckerExample)
+###### [3.0](../../tree/step-3-0/example/LuhnKataExample)
 ```fsharp
 [<TestCase(1, 2)>]
 member this.when_calculating_the_value_for_an_even_digit(digit, expected) =
@@ -15,14 +15,14 @@ member this.when_calculating_the_value_for_an_even_digit(digit, expected) =
 ```
 
 Go ahead and implement it to make that test pass.
-###### [3.1](../../tree/step-3-1/example/LuhnCheckerExample)
+###### [3.1](../../tree/step-3-1/example/LuhnKataExample)
 ```fsharp
 let evenDigitValue digit =
   2 * digit
 ```
 
 Now, let's write a test case where the doubled digit is multiple digits.
-###### [3.2](../../tree/step-3-2/example/LuhnCheckerExample)
+###### [3.2](../../tree/step-3-2/example/LuhnKataExample)
 ```fsharp
 [<TestCase(6,3)>]
 ```
