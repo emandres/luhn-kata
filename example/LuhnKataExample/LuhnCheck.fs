@@ -17,4 +17,6 @@ module LuhnCheck =
         2 * digit |> sumDigits
 
     let accountNumberValue accountNumber =
-        evenDigitValue accountNumber
+        digits accountNumber |>
+        Seq.mapi (fun index element -> if index % 2 = 0 then evenDigitValue element else oddDigitValue element) |>
+        Seq.sum
