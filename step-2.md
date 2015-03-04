@@ -19,7 +19,7 @@ type LuhnTests() =
 If you haven't realized, odd digits are really easy. Let's implement it.
 
 ```fsharp
-type LuhnChecker() =
+module LuhnChecker =
   let oddDigitValue digit =
     digit
 ```
