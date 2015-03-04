@@ -10,7 +10,7 @@ Let's write a test
 ```fsharp
 [<TestCase(1, 2)>]
 let when_calculating_the_value_for_an_even_digit(digit, expected) =
-  Asset.That(evenDigitValue digit, Is.EqualTo(expected))
+  Assert.That(evenDigitValue digit, Is.EqualTo(expected))
 ```
 
 Go ahead and implement it to make that test pass.
