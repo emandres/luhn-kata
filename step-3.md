@@ -10,16 +10,14 @@ Let's write a test
 
 ```fsharp
 [<TestCase(1, 2)>]
-member this.when_calculating_the_value_for_an_even_digit(digit, expected) =
-  let checker = new LuhnChecker()
-
-  Asset.That(checker.evenDigitValue digit, Is.EqualTo(expected))
+let when_calculating_the_value_for_an_even_digit(digit, expected) =
+  Asset.That(evenDigitValue digit, Is.EqualTo(expected))
 ```
 
 Go ahead an implement make that test pass.
 
 ```fsharp
-member this.evenDigitValue digit =
+let evenDigitValue digit =
   2 * digit
 ```
 
@@ -32,7 +30,7 @@ Now, let's write a test case where the doubled digit is multiple digits.
 And implement it.
 
 ```fsharp
-member this.evenDigitValue digit =
+let evenDigitValue digit =
   2 * digit |> sumDigits
 ```
 

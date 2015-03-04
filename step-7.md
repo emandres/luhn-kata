@@ -6,14 +6,12 @@ We're almost there. With our shiny new account number value, we can calculate th
 [<TestCase(1, 8)>]
 [<TestCase(10, 9)>]
 [<TestCase(411111111111111L, 1)>]
-member this.when_getting_the_check_digit(number, checkDigit) =
-  let checker = new LuhnChecker()
-
-  Assert.That(checker.checkDigit number, expected)
+let when_getting_the_check_digit(number, checkDigit) =
+  Assert.That(checkDigit number, expected)
 ```
 
 ```fsharp
-member this.checkDigit number =
+let checkDigit number =
   10 - (accountNumberValue number) % 10
 ```
 
@@ -26,6 +24,6 @@ Just one corner case we need to address.
 In the case where the account number value is 0, this makes the check digit 10, which is actually two digits, so we `mod 10` again.
 
 ```fsharp
-member this.checkDigit number =
+let checkDigit number =
   (10 - (accountNumberValue number) % 10) % 10
 ```

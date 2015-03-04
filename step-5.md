@@ -6,7 +6,7 @@ Let's refresh ourselves of what our test was.
 ```fsharp
 [<TestCase(1, 2)>]
 [<TestCase(6,3)>]
-member this.when_calculating_the_value_for_an_even_digit(digit, expected) =
+let when_calculating_the_value_for_an_even_digit(digit, expected) =
   let checker = new LuhnChecker()
 
   Asset.That(checker.evenDigitValue digit, Is.EqualTo(expected))
@@ -15,7 +15,7 @@ member this.when_calculating_the_value_for_an_even_digit(digit, expected) =
 Now that we have the sumDigits function, the implementation should be trivial.
 
 ```fsharp
-member this.evenDigitValue digit =
+let evenDigitValue digit =
   2 * digit |> sumDigits
 ```
 
