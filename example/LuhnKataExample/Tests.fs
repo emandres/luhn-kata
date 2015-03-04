@@ -31,5 +31,6 @@ type LuhnTests() =
     [<TestCase(1L, 8L)>]
     [<TestCase(10L, 9L)>]
     [<TestCase(411111111111111L, 1L)>]
+    [<TestCase(57L, 0L)>]
     member this.when_getting_the_check_digit(number, expected) =
         Assert.That(checkDigit number, Is.EqualTo(expected))
