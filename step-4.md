@@ -2,7 +2,7 @@
 
 Let's write a test for summing digits.
 
-###### [4.0](../../tree/step-4-0/example/LuhnCheckerExample)
+###### [4.0](../../tree/step-4-0/example/LuhnKataExample)
 ```fsharp
 [<TestCase(10, 1)>]
 member this.when_summing_two_digits(number, digitSum) =
@@ -10,7 +10,7 @@ member this.when_summing_two_digits(number, digitSum) =
 ```
 And implement it.
 
-###### [4.1](../../tree/step-4-1/example/LuhnCheckerExample)
+###### [4.1](../../tree/step-4-1/example/LuhnKataExample)
 ```fsharp
 let sumDigits number =
   1
@@ -18,7 +18,7 @@ let sumDigits number =
 
 I see what you did there....
 
-###### [4.2](../../tree/step-4-2/example/LuhnCheckerExample)
+###### [4.2](../../tree/step-4-2/example/LuhnKataExample)
 ```fsharp
 [<TestCase(11, 2)>]
 ```
