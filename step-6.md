@@ -28,4 +28,18 @@ let accountNumberValue number =
   Seq.sum
 ```
 
+That `Seq.mapi` is pretty ugly. Let's refactor that
+```fsharp
+let digitValue index element =
+  if index % 2 = 0 then
+    evenDigitValue element
+  else
+    oddDigitValue element
+    
+let accountNumberValue number =
+  digits number |>
+  Seq.mapi digitValue |>
+  Seq.sum
+```
+
 [Let's move on to the next step and wrap this up!](step-7.md)
