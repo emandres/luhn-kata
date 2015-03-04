@@ -28,4 +28,4 @@ module LuhnCheck =
         Seq.sum
 
     let checkDigit accountNumber =
-        10L - (accountNumberValue accountNumber) % 10L
+        (10L - (accountNumberValue accountNumber) % 10L) % 10L
