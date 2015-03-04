@@ -1,11 +1,14 @@
 # Sum Digits
 
+Let's write a test for summing digits.
+
 ###### [4.0](../../tree/step-4-0/example/LuhnCheckerExample)
 ```fsharp
 [<TestCase(10, 1)>]
 member this.when_summing_two_digits(number, digitSum) =
   Assert.That(sumDigits number, Is.EqualTo(digitSum))
 ```
+And implement it.
 
 ###### [4.1](../../tree/step-4-1/example/LuhnCheckerExample)
 ```fsharp
@@ -19,6 +22,8 @@ I see what you did there....
 ```fsharp
 [<TestCase(11, 2)>]
 ```
+
+Let's actually implement it.
 
 ###### [4.3](../../tree/step-4-3/example/LuhnCheckerExample)
 ```fsharp
