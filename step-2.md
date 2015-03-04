@@ -2,6 +2,7 @@
 
 Let's get warmed up by test driving the odd digit value calculation. 
 
+### [7.0](tree/step-2-0/example/LuhnCheckerExample)
 ```fsharp
 open LuhnChecker
 
