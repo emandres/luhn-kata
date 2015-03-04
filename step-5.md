@@ -10,7 +10,7 @@ let when_calculating_the_value_for_an_even_digit(digit, expected) =
   Asset.That(evenDigitValue digit, Is.EqualTo(expected))
 ```
 
-Now that we have the sumDigits function, the implementation should be trivial.
+Now that we have the `sumDigits` function, the implementation should be trivial.
 
 ```fsharp
 let evenDigitValue digit =
