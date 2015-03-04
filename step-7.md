@@ -2,7 +2,7 @@
 
 We're almost there. With our shiny new account number value, we can calculate the final check digit. To get the check digit, we need to `mod 10` the account number value, then subtract it from 10.
 
-###### [7.0](../../tree/step-7-0/example/LuhnKataExample)
+[7.0](../../tree/step-7-0/example/LuhnKataExample)
 ```fsharp
 [<TestCase(1, 8)>]
 [<TestCase(10, 9)>]
