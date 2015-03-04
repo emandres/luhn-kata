@@ -27,3 +27,5 @@ In the case where the account number value is 0, this makes the check digit 10, 
 let checkDigit number =
   (10 - (accountNumberValue number) % 10) % 10
 ```
+
+[Let's discuss what we learned](step-8.md)
