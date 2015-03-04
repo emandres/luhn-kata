@@ -7,7 +7,7 @@ We're almost there. With our shiny new account number value, we can calculate th
 [<TestCase(10, 9)>]
 [<TestCase(411111111111111L, 1)>]
 let when_getting_the_check_digit(number, checkDigit) =
-  Assert.That(checkDigit number, expected)
+  Assert.That(checkDigit number, Is.EqualTo(expected))
 ```
 
 ```fsharp
