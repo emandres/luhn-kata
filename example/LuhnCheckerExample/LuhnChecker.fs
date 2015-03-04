@@ -3,6 +3,6 @@
 open System
 
 module LuhnChecker =
-    let oddDigitValue : Int64 =
+    let oddDigitValue digit : Int64 =
         raise <| new NotImplementedException()
-
+        
