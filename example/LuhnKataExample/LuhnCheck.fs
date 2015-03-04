@@ -3,5 +3,4 @@
 open System
 
 module LuhnCheck =
-    let oddDigitValue digit =
-        digit
+    let oddDigitValue = id
