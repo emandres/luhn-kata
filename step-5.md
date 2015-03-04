@@ -2,7 +2,7 @@
 
 Let's refresh ourselves of what our test was.
 
-###### [5.0](../../tree/step-5-0/example/LuhnKataExample)
+[5.0](../../tree/step-5-0/example/LuhnKataExample)
 ```fsharp
 [<TestCase(1, 2)>]
 [<TestCase(6,3)>]
@@ -12,7 +12,7 @@ let when_calculating_the_value_for_an_even_digit(digit, expected) =
 
 Now that we have the `sumDigits` function, the implementation should be trivial.
 
-###### [5.1](../../tree/step-5-1/example/LuhnKataExample)
+[5.1](../../tree/step-5-1/example/LuhnKataExample)
 ```fsharp
 let evenDigitValue digit =
   2 * digit |> sumDigits

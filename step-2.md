@@ -2,7 +2,7 @@
 
 Let's get warmed up by test driving the odd digit value calculation. 
 
-###### [2.0](../../tree/step-2-0/example/LuhnCheckerExample)
+[2.0](../../tree/step-2-0/example/LuhnCheckerExample)
 ```fsharp
 open LuhnChecker
 
@@ -18,7 +18,7 @@ type LuhnTests() =
 
 If you haven't realized, odd digits are really easy. Let's implement it.
 
-###### [2.1](../../tree/step-2-1/example/LuhnCheckerExample)
+[2.1](../../tree/step-2-1/example/LuhnCheckerExample)
 ```fsharp
 module LuhnChecker =
   let oddDigitValue digit =
@@ -27,7 +27,7 @@ module LuhnChecker =
 
 We also could have aliased the identity function for this:
 
-###### [2.2](../../tree/step-2-2/example/LuhnCheckerExample)
+[2.2](../../tree/step-2-2/example/LuhnCheckerExample)
 ```fsharp
 let oddDigitValue = id
 ```

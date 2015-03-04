@@ -11,7 +11,7 @@ member this.when_getting_the_check_digit(number, checkDigit) =
   Assert.That(checkDigit number, Is.EqualTo(checkDigit))
 ```
 
-###### [7.1](../../tree/step-7-1/example/LuhnKataExample)
+[7.1](../../tree/step-7-1/example/LuhnKataExample)
 ```fsharp
 let checkDigit number =
   10 - (accountNumberValue number) % 10
@@ -19,14 +19,14 @@ let checkDigit number =
 
 Just one corner case we need to address.
 
-###### [7.2](../../tree/step-7-2/example/LuhnKataExample)
+[7.2](../../tree/step-7-2/example/LuhnKataExample)
 ```fsharp
 [<TestCase(57, 0)>]
 ```
 
 In the case where the account number value is 0, this makes the check digit 10, which is actually two digits, so we `mod 10` again.
 
-###### [7.3](../../tree/step-7-3/example/LuhnKataExample)
+[7.3](../../tree/step-7-3/example/LuhnKataExample)
 ```fsharp
 let checkDigit number =
   (10 - (accountNumberValue number) % 10) % 10
