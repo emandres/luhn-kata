@@ -18,7 +18,7 @@ Index|Digit|Value|Digit Sum
 |||Mod 10|6
 |||Check Digit|4
 
-* Even index digits are doubled. If the result is greater than ten, add its digits together.
+* Even index digits are doubled. If the result has more than one digit, add its digits together.
 * Odd index digits stay the same.
 * Add all of the values together, mod 10.
 * Subtract from 10, mod 10.
