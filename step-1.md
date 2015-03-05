@@ -2,7 +2,7 @@
 
 Credit card numbers are composed of two parts: an account number, and a check digit. The check digit is the last digit of the credit card number, and exists to ensure that a number isn't mistyped when manually entered. It is computed using a simple checksum algorithm known as a Luhn check. 
 
-So how does it work? Let's take the number 13293714 and compute it's check digit.
+So how does it work? Let's take the number 23293714 and compute it's check digit.
 
 Index|Digit|Value|Digit Sum
 ----:|----:|----:|--------:
