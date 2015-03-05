@@ -1,6 +1,6 @@
 # Even Digit Value
 
-Now let's work do the even digit value. As mentioned previously, even digits have a bit more of an algorithm to them.
+Now let's work on calculating even digit values. As mentioned previously, even digits have a bit more of an algorithm to them.
 
 1. Double the digit
 2. If the digit is multiple digits, add them together.
